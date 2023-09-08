@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Nhap noi dung tim kiem</span>
+    <input type="text"  id="myIput">
+    <span id="search"></span><br>
+    <select id="clother">quần áo</select>
+    <div id="searchBtn"></div>
+
+    <script>
+        let aCard=document.getElementById("search")
+        aCard.innerHTML = `<a id="link" href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_innerhtml_ul/">TÌm kiếm nâng cao</a>`;
+
+        let selectClother=document.getElementById("clother")
+        selectClother.innerHTML = `<option value="shịp ngàn năm">quần </option>;
+                                   <option value="shịp trăm năm">shịp trăm năm</option>;`
+        let mySearch=document.getElementById("searchBtn")
+        searchBtn.innerHTML =`<button>Tìm kiếm</button>`
+    </script>
+</body>
+</html>

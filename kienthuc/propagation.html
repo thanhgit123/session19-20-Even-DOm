@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv" style="width: 100px;height: 100px;background-color: red;"></div><br>
+    <div id="imerDiv" style="width: 50px;height: 50px;background-color: aqua;"></div>
+    <script>
+        let myDiv=document.getElementById("myDiv")
+        let imerDiv=document.getElementById("imerDiv")
+
+        //nếu có phươn thức stopPropagation thì sự kiện sẽ ko được lan truyền
+        function sukien1(event) {
+            //event.stopPropagation();
+            console.log("su kien cua myDiv xay ra");
+            
+        }
+        function sukien2() {
+            //event.stopPropagation();
+            console.log("su kien cua imerDiv xay ra");
+        }
+
+        //sự kiện xảy ra đồng thời với cả 2 phần tử mặc định sẽ lan truyền theo kiểu bubling
+        //nếu có đối số thứ 3 trong phương thức addEventListener là true thì sẽ lan truyền theo kiểu capturing
+        myDiv.addEventListener("click",sukien1,true)
+        imerDiv.addEventListener("click",sukien2)
+    </script>
+</body>
+</html>

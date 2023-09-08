@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">This is text.This is text.This is text.</div>
+    <button id="hide">hide text</button>
+    <button id="show">show text</button>
+<script>
+    let hideBtn=document.getElementById("hide");
+    let showBtn=document.getElementById("show");
+    let text=document.getElementById("myDiv");
+    hideBtn.addEventListener("click",function(){
+        text.style.display ="none";
+    })
+    showBtn.addEventListener("click",function(){
+        text.style.display = "block";
+    })
+</script>
+</body>
+</html>

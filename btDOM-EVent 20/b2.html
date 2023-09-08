@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- bai 2a -->
+    <!-- <span>Nhap noi dung tim kiem</span>
+    <input type="text" id="myIput" />
+    <span id="search"></span>
+
+    <div id="searchBtn"></div>
+
+    <script>
+      let mySearch = document.getElementById("searchBtn");
+      mySearch.innerHTML = `<button>Tìm kiếm</button>`;
+      mySearch.style.display = "none";
+
+      let aCard = document.getElementById("search");
+      aCard.innerHTML = `<a id="link" href="#">TÌm kiếm nâng cao</a>`;
+
+      aCard.addEventListener("click", function () {
+        mySearch.style.display = "block";
+      });
+    </script> -->
+
+
+<!-- bai2 b -->
+<span>Nhap noi dung tim kiem</span>
+<input type="text"  id="myIput">
+<span id="search"></span><br>
+<select id="clother">quần áo</select>
+<div id="searchBtn"></div>
+
+<script>
+    let aCard=document.getElementById("search")
+    aCard.innerHTML = `<a id="link" href="#">TÌm kiếm nâng cao</a>`;
+    aCard.addEventListener("click",function () {
+        mySearch.style.visibility ='hidden';
+    })
+
+    let selectClother=document.getElementById("clother")
+    selectClother.innerHTML = `<option value="shịp ngàn năm">quần </option>;
+                               <option value="shịp trăm năm">shịp trăm năm</option>;`
+
+    let mySearch=document.getElementById("searchBtn")
+    mySearch.innerHTML =`<button>Tìm kiếm</button>`
+</script>
+  </body>
+</html>

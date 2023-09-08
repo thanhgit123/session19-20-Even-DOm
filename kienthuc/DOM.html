@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- DOM
+     có 3 thành phần:
+     1.element
+     2.attribute
+     3. text
+
+    -->
+    <!-- <div id = "form"></div>
+    <scrip>
+        let a=document.getElementById("form")
+        a.innerHTML = `<input type="text" id="user"/>
+                     <input type="password" id="user"/>`;
+        let b=document.getElementById("user") 
+   
+        let c= document.getElementById("password");            -->
+
+    <input type="text"  id="name"/>
+    <button click="Show()">hiển thị</button>
+    <div id ="check"></div>
+    <script>
+        function Show(){
+            let name=document.getElementById('name').value;
+            document.getElementById('check').innerHTML=`chao xìn:${name}`
+        }
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tooltip</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ducimus.
+    </p>
+    <a href="" id="hover">hover over me</a>
+    <div
+      id="boxText"
+      style="
+        background-color: cadetblue;
+        display: inline-block;
+        position: absolute;
+        left: 9px;
+        top: 100px;
+        visibility: hidden;
+      "
+    >
+      Tooltip text
+    </div>
+    <script>
+      let hover = document.getElementById("hover");
+      let boxText = document.getElementById("boxText");
+      hover.addEventListener("mouseover", () => {
+        boxText.style.visibility = "visible";
+      });
+      hover.addEventListener("mouseleave", () => {
+        boxText.style.visibility = "hidden";
+      });
+    </script>
+
+</body>
+</html>

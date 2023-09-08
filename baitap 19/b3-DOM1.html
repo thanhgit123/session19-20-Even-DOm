@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+      display: flex;
+      padding: 20px;
+      margin-left: 10px;
+    }
+    h1{
+        text-align: center;
+    }
+  </style>
+<body>
+    <div id="all" style="width: 500px; height: auto; background: rgb(183, 177, 166)">
+        <h1>Change background color</h1>
+        <div id="1" style="background-color: rgb(0, 255, 191)"></div>
+        <div id="2" style="background-color: rgb(110, 73, 186)"></div>
+        <div id="3" style="background-color: rgb(232, 204, 47)"></div>
+      </div>
+      <script>
+        let all = document.getElementById("all");
+        let div1 = document.getElementById("1");
+        let div2 = document.getElementById("2");
+        let div3 = document.getElementById("3");
+        div1.addEventListener("mouseover", () => {
+          all.style.background = "blue";
+          
+        });
+        div2.addEventListener("mouseover", () => {
+          all.style.backgroundColor = "red";
+        });
+        div3.addEventListener("mouseover", () => {
+          all.style.backgroundColor = "rgb(73, 45, 45)";
+        });
+      </script>
+</body>
+</html>

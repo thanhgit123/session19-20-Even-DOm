@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #text2 {
+      width: 200px;
+      height: 50px;
+      background-color: aqua;
+    }
+  </style>
+  <body>
+    <p>Modal Example</p>
+    <button onclick="myFunction()">Open Modal</button>
+    <div id="text2">
+      <p>Some text in the Modal.</p>
+    </div>
+
+    <script>
+      function myFunction() {
+        let textShow = document.getElementById("text2");
+        if (textShow.style.visibility === "hidden") {
+          textShow.style.visibility = "visible";
+        } else {
+          textShow.style.visibility = "hidden ";
+        }
+      }
+    </script>
+  </body>
+</html>

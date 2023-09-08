@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv" style="width: 100px;height: 100px;background-color: red;"></div>
+    <script>
+        let myDiv=document.getElementById("myDiv")
+        
+        //gán sự kiện trực tiếp trong html
+        function sukien1(){
+            console.log("su kien1 xay ra");
+
+        }
+        function sukien2(){
+            console.log("su kien2 xay ra");
+
+        }
+        //gán sự kiện bằng cách thay đổi thuộc tính của phần tử
+        // myDiv.onclick = sukien1
+
+        // gán sự kiện sử dụng phương thức addEvenListener
+        myDiv.addEventListener("click",sukien1)
+        // myDiv.addEventListener("click",sukien2)
+
+
+        // myDiv.addEventListener("click",function(){
+        //     console.log("su kien 2 xay ra");
+        // })
+
+
+        myDiv.addEventListener("click",function(e){  // e là tên thôi.
+            console.log(e)
+        })
+    </script>
+</body>
+</html>

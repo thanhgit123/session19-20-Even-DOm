@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Create New Item</h1>
+    <label for="myInput">Input</label>
+    <input type="text" id="myInput" style="background-color: yellow;">
+    <button id="myBtn">Add</button><br>
+    <ul id="ul1">
+        <li>Nho mĩ</li>
+        <li>Táo Khựa</li>
+    </ul>
+
+    <script>
+        let inputOne = document.getElementById("myInput");
+        let btn = document.getElementById("myBtn");
+        let list = document.getElementById("ul1");
+
+        btn.addEventListener("click", function() {
+            let newInput = inputOne.value;
+            if (newInput.trim() !== "") {
+                let newLi = document.createElement("li");
+                newLi.textContent = newInput;
+                list.appendChild(newLi);
+                inputOne.value = "";
+                inputOne.style.backgroundColor = "yellow";
+            } else {
+                inputOne.style.backgroundColor = "white";
+            }
+        });
+
+        inputOne.addEventListener("input", function() {
+            let newInput = inputOne.value;
+            if (newInput.trim() !== "") {
+                inputOne.style.backgroundColor = "white";
+            } else {
+                inputOne.style.backgroundColor = "yellow";
+            }
+        });
+    </script>
+
+    </script>
+</body>
+</html>
